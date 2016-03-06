@@ -37,7 +37,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // 在命令行上输入"grunt test"，test task就会被执行。
-  grunt.registerTask('test', [ 'qunit']);
+  grunt.registerTask('test', ['qunit']);
   // 默认被执行的任务列表。
   grunt.registerTask('default', ['uglify']);
 
