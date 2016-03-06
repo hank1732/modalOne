@@ -1,4 +1,3 @@
-/*jshint -W030 */
 function ModalOne (modalArray, open, close) {
     // input validation
     if(!(typeof modalArray === 'string' || Array.isArray(modalArray))){

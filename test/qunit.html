@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>QUnit Example</title>
+    <link rel="stylesheet" href="qunit-1.20.0.css">
+</head>
+
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="qunit-1.20.0.js"></script>
+    <script src="../build/modalone.min.js"></script>
+    <script>
+    QUnit.test("hello test", function(assert) {
+        
+        // test for array
+        var modals = new ModalOne(['.aa', '#bb','.cc'], function (modalSearcher) {
+            // console.log(modalSearcher);
+        });
+        modals.choose('.aa');
+
+        // console.log(modals.toString());
+        modals.choose('.cc');
+        // console.log(modals.toString());
+        modals.choose('#bb');
+        // console.log(modals.toString());
+        modals.choose('#bb');
+        // console.log(modals.toString());
+
+        assert.equal(modals.toString(), "closed closed closed ", "Basic");
+
+        // error input
+        try {
+           var modal2 = new ModalOne({}); 
+        }catch(e){
+            // console.log(e);
+        }
+
+
+        // test for string
+        var modal3 = new ModalOne('.aa');
+        modal3.choose('.aa');
+        // console.log(modal3.toString());
+        modal3.choose('.aa');
+        // console.log(modal3.toString());
+        modal3.choose('.aa');
+        // console.log(modal3.toString());
+
+        // test for open and close
+        var modal4 = new ModalOne('.aa', function (modalSearcher) {
+            // console.log(modalSearcher);
+        });
+        modal4.choose('.aa');
+    });
+    </script>
+</body>
+
+</html>

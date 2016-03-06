@@ -1,0 +1,27 @@
+{
+  "name": "modalone",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-qunit": ">=0.2.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": ">=0.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hank1732/modalOne.git"
+  },
+  "license": "MIT",
+  "description": "## 用途 在使用弹出框时，可能会有多个弹框，当弹出一个时，需要关闭其他弹窗。 这时，使用一个函数来管理弹窗会比较方便。",
+  "bugs": {
+    "url": "https://github.com/hank1732/modalOne/issues"
+  },
+  "homepage": "https://github.com/hank1732/modalOne#readme",
+  "main": "modalOne.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
+}
