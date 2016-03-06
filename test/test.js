@@ -15,6 +15,7 @@ QUnit.test("hello test", function(assert) {
         // console.log(modals.toString());
 
         assert.equal(modals.toString(), "closed closed closed ");
+        assert.equal(modals.toString(), "closed open closed ");
 
         // error input
         try {
